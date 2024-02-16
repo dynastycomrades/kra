@@ -92,7 +92,7 @@
                         <p>National id number<span class="important">*</span> <input name="National-Id" type="number" required>
                       </p>
                       
-                    <P>Date of birth<span class="important">*</span> <input type="text" placeholder="dd/mm/yyyy" name="dob"></P>
+                    <P>Date of birth<span class="important">*</span> <input type="text" placeholder="dd/mm/yyyy" name="dob" required></P>
                     
                     </div>
                     <div class="Principal-Physical-address">
@@ -101,15 +101,15 @@
                         <input name="road" placeholder="steet/road">
                       </p>
                       <p>County name<span class="important">*</span>
-                          <input name="county" placeholder="county">
+                          <input name="county" placeholder="county" required>
                       </p>
                       <p>
                           District name<span class="important">*</span>
-                          <input name="district" placeholder="district">
+                          <input name="district" placeholder="district" required>
                       </p>
                       <p>
                           City/Town name<span class="important">*</span>
-                          <input name="town" placeholder="city/town">
+                          <input name="town" placeholder="city/town" required>
                       </p>
 
                       <p>
@@ -126,7 +126,7 @@
                       <p>Telephone number
                         <input name="P-number" placeholder="phone number">
                       </p>
-                      <p>Mobile number 1<span class="important">*</span> 
+                      <p>Mobile number 1<span class="important" required>*</span> 
                           <input name="Mobile-number1" placeholder="mobile number 1">
                       </p>
                       <p>
@@ -136,7 +136,7 @@
                        <p class="important">If you have only one email address,just fill in the main email address</p>
                       <p>
                         
-                          Main email address<span class="important">*</span>
+                          Main email address<span class="important" reqiured>*</span>
                           <input name="town" placeholder="Main">
                       </p>
 
@@ -250,10 +250,10 @@
 
                   <hr>
 
-                  <div class="Upload-document">
+                  <div class="Upload-document" >
                     <h3>Details of upload document<span class="important">*</span></h3>
                     <p>Upload supporting Document for Registration e.g id photo or scanned id
-                    <input type="file" id="myFile" name="filename">
+                    <input type="file" id="myFile" name="filename" required>
                     </p>
 
                     
