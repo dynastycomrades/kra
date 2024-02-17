@@ -7,41 +7,89 @@
     <style>
       .top-bar{
         display:flex;
-        padding:20px;
+        padding:40px;
         justify-content:space-between;
+        position:sticky;
+        top: 0px;
+        margin: auto;
+        background:rgba(255,215,0,0.9);
+        box-shadow:0 3px 4px 2px #000;
       }
       .top-bar p{
         display:inline;
+        font-size: 2em;
+        box-shadow:0 3px 4px 2px #000;
+        text-align: center;
+        min-width: 100px;
+        background: #fff;
+
       }
+      
+      .top-bar p a{
+                  text-decoration: none;
+      }
+      
+      .content{
+          background:rgba(255,215,0,0.3);
+          padding: 10px;
+      }
+      
+      .content div div{
+          padding: 10px;
+          border:solid 1px gold;
+          box-shadow: 0 2px 4px 2px #fff;
+          
+      }
+      
+      .top{
+          background: rgba(255,215,0,0.9);
+      }
+      
+        .header{
+          background: rgba(255,215,0,0.9);
+        
+      }
+     
+      
 
       .title{
         text-align:center;
         font-family:algerian;
         font-size: 3rem;
         color:green;
+        border:2px solid #eee;
+        /*margin:30px;*/
+        background:#fff ;
+        border-radius:8px;
+        margin-bottom:2px ;
+        /*margin-top:80px;*/
+        
       }
       .form-title{
         background:rgba(100,100,250);
         text-align:center;
         margin-bottom:0px;
+        font-size:2em;
       }
 
       .form{
         margin-top:2px;
-        background:rgba(50,20,250,0.3);
+        background:rgba(255,215,0,0.09);
         border:2px rgba(250,200,150) solid;
         border-radius:5px;
       }
       .input{
-        font-size:3em;
+        font-size:3rem;
         
       }
-      }
+      
       .input select,input{
-        font-size:3em;
-        height:100px;
-        border:solid 3px rgba(0,250,100);
+          padding: 4px;
+        font-size:40px;
+        height:4rem;
+        border:solid 3px rgba(0,200,100);
         border-radius:5px;
+        background: #fff;
       
         
       }
@@ -50,51 +98,75 @@
   
     <body style="font-family:arial">
       <div class="main">
-        <div class="header">
+          
             <div class="top-bar">
+                 
                <p>
-                    <a class="help" href="help.html">
-                        Help
+                <a class="help" href="help.html">
+                   <img src="help.jpeg" height="60px" style="border-radius:20px">
+                   <br>
+                       Help
                 
-                    </a>
+                </a>
+                
+                
                </p>
-              <p>
-               <a class="about" href="about.html">
-                 About
-                
-              </a>
-              </p>
+               
+               
+               <p>
+                   
+                <a class="about" href="about.html">
+          
+                  <img src="about.png" height="60px">
+                  <br>
+                       About
+                </a>
+               </p>
             </div>
           
-        </div>
-        <div class="title">
-           <h1>DYNAST COMRADES LTD</h1>
-        </div>
-        <div clas="content">
-          <div class="who">
-            <h3>Who are we?</h3>
-          </div>
-          
-
-          <div class="how">
-              <h3>How Our KRA Application services work</h3>
-              <p></p>
-            
-          </div>
-
-          <div class="form-title"> 
-            <h1>
-              KRA APLLICATION FORM
-            </h1>
-          </div>
-          
-          <div class="form">
-            <p class="important"><b>NB: </b> 
-              If you don't know what any of the questions below mean,leave it as it is.
+           <div class="top">
+               <div class="title">
+                   <h1>DYNASTY COMRADES LTD</h1>
+                   <p>
+                      <img src="logo.jpg" height="300px">
+                   </p>
+         
+              </div>
+        
               <br>
-              Any question that has an asterick i.e * after it is important for you to anwer or check if the default answer is correct.
-              <br>You can <a href="support.html">click here </a> to ask our support team.</p>
+            </div>
+        
+            <div class="content">
+                
+              <div class="who">
+                <h4>Who are we?</h4>
+              </div>
+          
+
+              <div class="how">
+                  <h4>
+                      How Our KRA Application services work
+                    </h4>
+                  <p></p>
+            
+              </div>
+
+              <div class="form-title"> 
+                <h1>
+                  KRA APLLICATION FORM
+                </h1>
+              </div>
+          
+              <div class="form">
+                <p class="important"><b>NB: </b> 
+                  If you don't know what any of the questions below mean,you may leave it as it is.
+                  <br>
+                  Any question that has an asterick i.e * after it is important for you to answer or check if the default answer is correct.
+                  <br>You can <a href="support.html">click here </a> to ask our support team.</p>
+                  <hr>
+                  
             <form>
+                <hr>
               
               
               <div class="taxpayer-type">
@@ -184,7 +256,7 @@
                      <div class="Principal-Contact-details">
                       <h3>Principal Contact Details</h3>
                        <h4>Phone and Mobile number</h4>
-                       <p class="important"><b>NB:</b>If you have only one phone number just fill in the mobile number 1</p>
+                       <p class="important"><b>NB:</b>If you have only one phone number just fill in the "mobile number 1"</p>
                       <p class="input">Telephone number
                         <input name="P-number" placeholder="phone number">
                       </p>
@@ -197,7 +269,7 @@
                       </p>
                       <h4>Email address</h4>
                        <p class="important">If you don't have an email address yet,<a href="https://accounts.google.com/lifecycle/steps/signup/name?dsh=S772255678:1708096952299668&flowEntry=SignUp&flowName=GlifWebSignIn&theme=glif&TL=ADg0xR3gFgdGO1-RImnsfp5S78crH22ud8f1EDF5fYr08PX4uiIjDjd8LgKOCxVc">click here</a> to get help creating one.</p>
-                       <p class="important">If you have only one email address,just fill in the main email address</p>
+                       <p class="important">If you have only one email address,just fill in the "Main email address "</p>
                       <p class="input">
                         
                           Main email address<span class="important" reqiured>*</span>
@@ -339,14 +411,18 @@
                   <h3>
                     Submit details
                   </h3>
-                <p>Submit details <input class="submit-btn" type="submit" value="submit"></p>
+                <p><input class="submit-btn" type="submit" value="submit"></p>
               </div>
             </form>
           </div>
           
         </div>
         <div class="footer">
-          
+          <p>
+              <img src="code.png" height="70px">
+              <br>
+              <i>Developed by dynastyIT</i>
+          </p>
         </div>
       </div>
       
@@ -355,5 +431,33 @@
             .important{
               color:red;
             }
+            
+            .submit{
+                color:rgba(20,20,255);
+                text-align: center;
+                background: rgba();
+                font-size: 2em;
+                text-transform: uppercase;
+                
+                
+            }
+            
+            .submit-btn{
+                text-transform: uppercase;
+                height: 100px;
+                width: 300px;
+                background-color:rgba(100,250,100);
+                font-weight:bold;
+                color:rgba(255,25,0);
+            }
+            
+            .footer{
+                text-align: center;
+                font-size: 0.5em;
+                font-family: "Times New Roman";
+                
+                
+            }
           </style>
-</html>
+                                                    </html>
+  
